@@ -1,5 +1,5 @@
 const photoFiles=['IMG_20260123_171831296.jpg','Screenshot_20260412-160116.png','IMG_20260413_125346132.jpg','IMG_20260413_140303699.jpg','IMG_20260529_160414758.jpg','IMG_20260529_161304677.jpg','Screenshot_20260706-141451.png','IMG_20260713_164416351.jpg','IMG_20260713_164403416.jpg','IMG_20260810_141936530.jpg','IMG_20260420_170829614.jpg','IMG_20260420_160417940.jpg','IMG_20260322_173055659.jpg','IMG_20260713_164454449.jpg','IMG_20260322_165919010.jpg'];
-const P='assets/photos/'; let pin='',flowers=[];
+const P=''; let pin='',flowers=[];
 const keys=document.querySelector('.keys');[1,2,3,4,5,6,7,8,9,'⌫',0,'♥'].forEach(k=>{let b=document.createElement('button');b.textContent=k;b.onclick=()=>{if(k==='⌫')pin=pin.slice(0,-1);else if(k!=='♥'&&pin.length<4)pin+=k;renderDots()};keys.appendChild(b)});
 function renderDots(){document.querySelector('#dots').textContent=[0,1,2,3].map(i=>i<pin.length?'●':'○').join(' ')}
 const bgMusic=document.querySelector('#bgMusic'), musicToggle=document.querySelector('#musicToggle');
