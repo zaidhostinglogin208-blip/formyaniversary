@@ -9,3 +9,6 @@ HOW TO OPEN:
 3. For hosting, upload the entire folder keeping assets/photos unchanged.
 
 Built as a mobile-friendly static website; no backend required.
+
+
+<!-- photo cleanup refresh -->
